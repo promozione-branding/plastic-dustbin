@@ -29,6 +29,7 @@ export default function ContactForm({ isOpen, onClose }) {
       setLoading(true);
 
       const formData = {
+        supplierToken: "6a2faa24c9554d0a6b20f87e",
         platform: "Plastic Dustbin Manufacturer Popup Form",
         platformEmail: "shaanpolywell@gmail.com",
         name,
@@ -108,7 +109,7 @@ Contact: ${phone}`;
       return toast.error("Enter Valid Phone Number");
     }
 
-   
+
     await submitForm();
   };
 

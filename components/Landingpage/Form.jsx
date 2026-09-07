@@ -30,29 +30,29 @@ export default function ContactForm() {
   // const [otp, setOtp] = useState("");
   // const [showOtpBox, setShowOtpBox] = useState(false);
   // const [confirmationResult, setConfirmationResult] =
-    // useState(null);
+  // useState(null);
 
   // CAPTCHA ID
   // const recaptchaId = "popup-contact-recaptcha";
 
   // OPEN POPUP
-useEffect(() => {
-  const handleScroll = () => {
-    const scrollHeight =
-      document.documentElement.scrollHeight - window.innerHeight;
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollHeight =
+        document.documentElement.scrollHeight - window.innerHeight;
 
-    if (window.scrollY >= scrollHeight * 0.3) {
-      setIsOpen(true);
+      if (window.scrollY >= scrollHeight * 0.3) {
+        setIsOpen(true);
+        window.removeEventListener("scroll", handleScroll);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => {
       window.removeEventListener("scroll", handleScroll);
-    }
-  };
-
-  window.addEventListener("scroll", handleScroll, { passive: true });
-
-  return () => {
-    window.removeEventListener("scroll", handleScroll);
-  };
-}, []);
+    };
+  }, []);
 
   // INITIALIZE RECAPTCHA
   useEffect(() => {
@@ -131,6 +131,7 @@ useEffect(() => {
       setLoading(true);
 
       const formData = {
+        supplierToken: "6a2faa24c9554d0a6b20f87e",
         platform: "plastic dustbin Popup Form",
         platformEmail: "info@polywell.co.in",
         name,
@@ -352,36 +353,36 @@ Contact: ${phone}`;
                 </option>
               </select>
             </div>
-            
-             <div className="flex flex-col sm:flex-row gap-3">
-            <input
-              type="tel"
-              maxLength={10}
-              minLength={10}
-              pattern="[0-9]{10}"
-              placeholder="08123456789"
-              className="w-full p-3 rounded-lg text-black text-sm border border-gray-300 focus:ring-2 focus:ring-yellow-400 focus:outline-none bg-white/90 shadow-sm transition"
-              required
-              value={phone}
-              onChange={(e) =>
-                setPhone(
-                  e.target.value.replace(/\D/g, "")
-                )
-              }
-              disabled={loading}
-            />
-            <input
-              type="text"
-              
-              placeholder="Location"
-              className="w-full p-3 rounded-lg text-black text-sm border border-gray-300 focus:ring-2 focus:ring-yellow-400 focus:outline-none bg-white/90 shadow-sm transition"
-              
-              value={location}
-              onChange={(e) =>
-                setLocation(e.target.value)
-              }
-              disabled={loading}
-            />
+
+            <div className="flex flex-col sm:flex-row gap-3">
+              <input
+                type="tel"
+                maxLength={10}
+                minLength={10}
+                pattern="[0-9]{10}"
+                placeholder="08123456789"
+                className="w-full p-3 rounded-lg text-black text-sm border border-gray-300 focus:ring-2 focus:ring-yellow-400 focus:outline-none bg-white/90 shadow-sm transition"
+                required
+                value={phone}
+                onChange={(e) =>
+                  setPhone(
+                    e.target.value.replace(/\D/g, "")
+                  )
+                }
+                disabled={loading}
+              />
+              <input
+                type="text"
+
+                placeholder="Location"
+                className="w-full p-3 rounded-lg text-black text-sm border border-gray-300 focus:ring-2 focus:ring-yellow-400 focus:outline-none bg-white/90 shadow-sm transition"
+
+                value={location}
+                onChange={(e) =>
+                  setLocation(e.target.value)
+                }
+                disabled={loading}
+              />
             </div>
 
             {/* RECAPTCHA */}
@@ -442,16 +443,15 @@ Contact: ${phone}`;
               className="w-full py-3 bg-gradient-to-r from-[#F7C600] to-[#F7A400] hover:opacity-90 transition rounded-lg font-semibold text-white text-sm shadow-lg"
             >
               {loading
-                ? "Loading...": "Submit Enquiry"}
+                ? "Loading..." : "Submit Enquiry"}
             </button>
 
             {status && (
               <p
-                className={`text-center text-sm mt-2 font-medium ${
-                  status.startsWith("✅")
+                className={`text-center text-sm mt-2 font-medium ${status.startsWith("✅")
                     ? "text-green-600"
                     : "text-red-600"
-                }`}
+                  }`}
               >
                 {status}
               </p>

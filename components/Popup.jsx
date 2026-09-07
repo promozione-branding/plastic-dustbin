@@ -36,40 +36,40 @@ export default function ContactForm() {
   // const recaptchaId = "popup-contact-recaptcha";
 
   // OPEN POPUP
-useEffect(() => {
-  // Don't show again during this browser session
-  if (sessionStorage.getItem("popupShown")) return;
+  useEffect(() => {
+    // Don't show again during this browser session
+    if (sessionStorage.getItem("popupShown")) return;
 
-  const handleScroll = () => {
-    const scrollableHeight =
-      document.documentElement.scrollHeight - window.innerHeight;
+    const handleScroll = () => {
+      const scrollableHeight =
+        document.documentElement.scrollHeight - window.innerHeight;
 
-    // If page isn't scrollable enough
-    if (scrollableHeight <= 0) return;
+      // If page isn't scrollable enough
+      if (scrollableHeight <= 0) return;
 
-    const scrolled = window.scrollY;
+      const scrolled = window.scrollY;
 
-    // Show popup after 30% of total scrollable page
-    if (scrolled >= scrollableHeight * 0.3) {
-      setIsOpen(true);
+      // Show popup after 30% of total scrollable page
+      if (scrolled >= scrollableHeight * 0.3) {
+        setIsOpen(true);
 
-      sessionStorage.setItem("popupShown", "true");
+        sessionStorage.setItem("popupShown", "true");
 
+        window.removeEventListener("scroll", handleScroll);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll, {
+      passive: true,
+    });
+
+    // Check once in case the page is already scrolled
+    handleScroll();
+
+    return () => {
       window.removeEventListener("scroll", handleScroll);
-    }
-  };
-
-  window.addEventListener("scroll", handleScroll, {
-    passive: true,
-  });
-
-  // Check once in case the page is already scrolled
-  handleScroll();
-
-  return () => {
-    window.removeEventListener("scroll", handleScroll);
-  };
-}, []);
+    };
+  }, []);
 
   // INITIALIZE RECAPTCHA
   // useEffect(() => {
@@ -148,6 +148,7 @@ useEffect(() => {
       setLoading(true);
 
       const formData = {
+        supplierToken: "6a2faa24c9554d0a6b20f87e",
         platform: "Plastic Dustbin Popup Form",
         platformEmail: "shaanpolywell@gmail.com",
         name,

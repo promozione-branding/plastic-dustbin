@@ -15,8 +15,8 @@ export default function BulkEnquiry() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-   const [submitted, setSubmitted] = useState(false);
-    const [successMessage, setSuccessMessage] = useState("");
+  const [submitted, setSubmitted] = useState(false);
+  const [successMessage, setSuccessMessage] = useState("");
 
   const [loading, setLoading] = useState(false);
 
@@ -25,11 +25,12 @@ export default function BulkEnquiry() {
       setLoading(true);
 
       const formData = {
+        supplierToken: "6a2faa24c9554d0a6b20f87e",
         platform: "Plastic Dustbin Manufacturer Popup Form",
         platformEmail: "shaanpolywell@gmail.com",
-        name:company,
+        name: company,
         phone,
-        email :email || "NA",
+        email: email || "NA",
         place: place,
         product,
         message: `Company Name: ${company || "N/A"}, Bussiness Type : ${businessType} , Quantity: ${quantity} `,
@@ -142,7 +143,7 @@ export default function BulkEnquiry() {
               </label>
               <input
                 value={company}
-                onChange={(e)=>setCompany(e.target.value)}
+                onChange={(e) => setCompany(e.target.value)}
                 required
                 disabled={loading}
                 type="text"
@@ -266,10 +267,10 @@ export default function BulkEnquiry() {
                   05 — CITY / STATE
                 </label>
                 <input
-                value={place}
-                onChange={(e)=>setPlace(e.target.value)}
-                required
-                disabled={loading}
+                  value={place}
+                  onChange={(e) => setPlace(e.target.value)}
+                  required
+                  disabled={loading}
                   type="text"
                   placeholder="e.g. Pune, Maharashtra"
                   className="w-full mt-1 border rounded-lg px-3 py-2 text-sm"
@@ -280,21 +281,21 @@ export default function BulkEnquiry() {
             {/* Phone */}
             <div>
               <label className="text-xs text-gray-500">06 — PHONE NUMBER</label>
-            <input
-  value={phone}
-  onChange={(e) => {
-    const value = e.target.value.replace(/\D/g, ""); // remove non-numbers
-    if (value.length <= 10) {
-      setPhone(value);
-    }
-  }}
-  required
-  disabled={loading}
-  type="tel"
-  inputMode="numeric"
-  placeholder="10-digit mobile number"
-  className="w-full mt-1 border rounded-lg px-3 py-2 text-sm"
-/>
+              <input
+                value={phone}
+                onChange={(e) => {
+                  const value = e.target.value.replace(/\D/g, ""); // remove non-numbers
+                  if (value.length <= 10) {
+                    setPhone(value);
+                  }
+                }}
+                required
+                disabled={loading}
+                type="tel"
+                inputMode="numeric"
+                placeholder="10-digit mobile number"
+                className="w-full mt-1 border rounded-lg px-3 py-2 text-sm"
+              />
             </div>
 
             {/* Button */}
@@ -302,7 +303,7 @@ export default function BulkEnquiry() {
               type="submit"
               className="w-full bg-lime-800 text-white py-3 rounded-lg mt-2 hover:bg-[#0f5d3f] transition"
             >
-              {loading ? " SUBMITTING BULK ENQUIRY..." :"REQUEST BULK QUOTE →"}
+              {loading ? " SUBMITTING BULK ENQUIRY..." : "REQUEST BULK QUOTE →"}
             </button>
 
             <p className="text-xs text-center text-gray-500 mt-2">

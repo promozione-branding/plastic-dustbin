@@ -134,6 +134,7 @@ export default function Form() {
       setLoading(true);
 
       const formData = {
+        supplierToken: "6a2faa24c9554d0a6b20f87e",
         platform: "Plastic Dustbin Manufacturer Landing Page Form",
         platformEmail: "shaanpolywell@gmail.com",
         name,
