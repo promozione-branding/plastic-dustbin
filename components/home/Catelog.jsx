@@ -15,7 +15,7 @@ export default function Catelog() {
 
           {/* Desktop Background */}
           <Image
-            src="/catelog.png"
+            src="/Catelog.png"
             alt="Sangam Plastic Industries Catalogue"
             fill
             priority
