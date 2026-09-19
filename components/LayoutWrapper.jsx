@@ -12,6 +12,7 @@ export default function LayoutWrapper({ children }) {
     pathname.startsWith("/studio") ||
     pathname.startsWith("/login") ||
     pathname.startsWith("/inquiry") ||
+    pathname.startsWith("/home2") ||
     pathname.startsWith("/bulk-inquiry");
 
   return (
