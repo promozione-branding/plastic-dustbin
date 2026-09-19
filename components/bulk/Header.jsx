@@ -21,7 +21,7 @@ export default function Header() {
 }, []);
 
   return (
-    <header className="bg-[#0F5D3F] py-3">
+    <header className="bg-[#0F5D3F] fixed z-50 w-full mb-5 top-0 py-3">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between">
         {/* Logo */}
         <Image

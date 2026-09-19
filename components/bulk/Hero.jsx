@@ -9,7 +9,7 @@ export default function Hero() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <section className="bg-[#F5F6EF] py-8 lg:py-14">
+    <section className="bg-[#F5F6EF] py-8 mt-15 md:mt-20 lg:py-14">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="grid items-center gap-14 lg:grid-cols-2">
           {/* Left Content */}
