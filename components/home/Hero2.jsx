@@ -65,7 +65,7 @@ export default function Hero2() {
             </div>
 
             {/* Heading */}
-            <h1 className="text-5xl whitespace-nowrap font-bold leading-[1.08] tracking-tight text-black sm:text-5xl">
+            <h1 className="text-5xl whitespace-nowrap font-bold leading-[1.08] tracking-tight text-white sm:text-5xl">
               Smart Waste
             
               <span className="text-green-600"> Management</span>
