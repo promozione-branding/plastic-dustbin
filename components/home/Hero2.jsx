@@ -46,7 +46,7 @@ export default function Hero2() {
       </div>
 
       {/* ================= BLACK OVERLAY ================= */}
-      <div className="absolute inset-0 z-[1] bg-black/5" />
+      <div className="absolute inset-0 z-[1] bg-black/30" />
 
       {/* ================= HERO CONTENT ================= */}
       <div className="relative z-50 mx-auto flex min-h-[620px] max-w-7xl items-center px-6 py-5 lg:px-8">
@@ -65,10 +65,10 @@ export default function Hero2() {
             </div>
 
             {/* Heading */}
-            <h1 className="text-5xl whitespace-nowrap font-bold leading-[1.08] tracking-tight text-white sm:text-5xl">
+            <h1 className="text-5xl whitespace-nowrap font-bold leading-[1.08] tracking-tight text-black sm:text-5xl">
               Smart Waste
             
-              <span className="text-green-600">Management</span>
+              <span className="text-green-600"> Management</span>
               <br />
               Starts Here.
             </h1>
@@ -80,7 +80,7 @@ export default function Hero2() {
                   100%
                 </p>
 
-                <p className="mt-1 text-xs text-white/70">
+                <p className="mt-1 text-xs text-white">
                   Quality Focused
                 </p>
               </div>
@@ -90,7 +90,7 @@ export default function Hero2() {
                   Durable
                 </p>
 
-                <p className="mt-1 text-xs text-white/70">
+                <p className="mt-1 text-xs text-white">
                   Built for Daily Use
                 </p>
               </div>
@@ -100,14 +100,14 @@ export default function Hero2() {
                   Bulk
                 </p>
 
-                <p className="mt-1 text-xs text-white/70">
+                <p className="mt-1 text-xs text-white">
                   Manufacturing
                 </p>
               </div>
             </div>
 
              {/* Description */}
-            <p className="mt-6 max-w-lg text-lg text-white/80">
+            <p className="mt-6 max-w-lg text-lg text-white">
               Durable, hygienic and thoughtfully designed plastic dustbins
               manufactured for homes, offices, commercial spaces and
               industrial applications.
