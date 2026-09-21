@@ -126,7 +126,7 @@ const Footer = () => {
               </div>
 
               {/* Social */}
-              <div className="mt-6 flex items-center gap-2">
+              {/* <div className="mt-6 flex items-center gap-2">
 
                 <a
                   href="#"
@@ -160,7 +160,7 @@ const Footer = () => {
                   <Linkedin size={14} />
                 </a>
 
-              </div>
+              </div> */}
             </div>
 
             {/* =================================================
