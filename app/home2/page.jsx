@@ -8,7 +8,6 @@ import Testimonial from "@/components/Landingpage/Testmonial";
 import Footer from '@/components/home/Footer'
 import Whychoose from '@/components/home/Whychoose'
 import Product from '@/components/home/Products'
-import Trust from '@/components/home/Trust'
 import Catelog from '@/components/home/Catelog'
 import Certificates from '@/components/home/Certificate'
 import Faq from '@/components/home/Faq'

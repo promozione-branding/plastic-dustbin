@@ -50,8 +50,8 @@ export default function Header2() {
 
   return (
     <>
-     <header
-  className={`fixed top-0 left-0 w-full z-[9999] transition-all duration-300 ${
+      <header
+        className={`fixed top-0 left-0 w-full z-[9999] transition-all duration-300 ${
           scrolled ? "shadow-lg bg-white" : "bg-white"
         }`}
       >
@@ -91,7 +91,7 @@ export default function Header2() {
           </div>
 
           {/* ================= RIGHT COLUMN ================= */}
-     <div className="hidden lg:block overflow-visible">
+          <div className="hidden lg:block overflow-visible">
             {/* ===== TOP STRIP ===== */}
             <div className="bg-green-800 ">
               <div className="w-full px-4 xl:px-6 flex flex-col xl:flex-row xl:items-center xl:justify-between gap-3 py-2">
@@ -122,13 +122,11 @@ export default function Header2() {
                     हिंदी में देखें
                   </button>
                 </div>
-
-               
               </div>
             </div>
 
             {/* ===== MAIN NAV ===== */}
-        <nav className="relative bg-green-800 min-h-[68px] flex items-center overflow-visible">
+            <nav className="relative bg-green-800 min-h-[68px] flex items-center overflow-visible">
               <div className="w-full px-4 xl:px-6 flex items-center justify-between gap-4">
                 {/* CENTER MENU */}
                 <ul className="flex items-center gap-4 xl:gap-8 2xl:gap-10 text-base xl:text-lg 2xl:text-xl font-medium text-white flex-wrap">
@@ -151,8 +149,8 @@ export default function Header2() {
                       </Link>
 
                       {item.hasCategories && openMenu === "Products" && (
-                 <div
-  className="
+                        <div
+                          className="
     absolute
    
     left-0
@@ -169,7 +167,7 @@ export default function Header2() {
     shadow-2xl
     z-[99999]
   "
->
+                        >
                           {categories.map((cat) => (
                             <Link
                               key={cat.id}
