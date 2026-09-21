@@ -10,6 +10,8 @@ import Whychoose from '@/components/home/Whychoose'
 import Product from '@/components/home/Products'
 import Trust from '@/components/home/Trust'
 import Catelog from '@/components/home/Catelog'
+import Certificates from '@/components/home/Certificate'
+import Faq from '@/components/home/Faq'
 
 
 export default function page() {
@@ -24,7 +26,9 @@ export default function page() {
    {/* <Trust/> */}
    <Catelog/>
    <Whychoose/>
+   <Certificates/>
    <Testimonial></Testimonial>
+   <Faq/>
    <Footer/>
    </>
   )

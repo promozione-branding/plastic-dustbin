@@ -100,7 +100,7 @@ const Footer = () => {
                 />
               </Link>
 
-              <p className="mt-5 max-w-md text-sm leading-6 text-[#9CAABA]">
+              <p className="mt-5 max-w-md text-base leading-6 text-[#9CAABA]">
                 Sangam Plastic Industries Pvt. Ltd. is a manufacturer of
                 high-quality plastic waste management solutions for homes,
                 hospitals, industries and commercial spaces across India.
@@ -110,15 +110,15 @@ const Footer = () => {
               <div className="mt-6 space-y-2 border-t border-[#26364A] pt-5 text-[11px] leading-5 text-[#7F8FA1]">
                 
 
-                <p>
-                  <span className="text-[#B7C2CE]">
+                <p className="text-sm">
+                  <span className="text-[#B7C2CE] text-sm ">
                     Certifications:
                   </span>{" "}
                   ISO 9001:2015 • GeM OEM Verified • CDSCO MD-04
                 </p>
 
-                <p>
-                  <span className="text-[#B7C2CE]">
+                <p className="text-sm">
+                  <span className="text-[#B7C2CE] ">
                     Manufacturing:
                   </span>{" "}
                   Plastic Waste Management Solutions
@@ -168,7 +168,7 @@ const Footer = () => {
             ================================================= */}
             <div className="lg:col-span-2">
 
-              <h3 className="mb-5 text-[11px] font-semibold uppercase tracking-[0.16em] text-white">
+              <h3 className="mb-5 text-base font-semibold uppercase tracking-[0.16em] text-white">
                 Explore
               </h3>
 
@@ -177,7 +177,7 @@ const Footer = () => {
                   <li key={link.name}>
                     <Link
                       href={link.href}
-                      className="group inline-flex items-center gap-1 text-sm text-[#9CAABA] transition hover:text-white"
+                      className="group inline-flex items-center gap-1 text-base text-[#9CAABA] transition hover:text-white"
                     >
                       {link.name}
 
@@ -197,7 +197,7 @@ const Footer = () => {
             ================================================= */}
             <div className="lg:col-span-2">
 
-              <h3 className="mb-5 text-[11px] font-semibold uppercase tracking-[0.16em] text-white">
+              <h3 className="mb-5 text-base font-semibold uppercase tracking-[0.16em] text-white">
                 Products
               </h3>
 
@@ -206,7 +206,7 @@ const Footer = () => {
                   <li key={product.name}>
                     <Link
                       href={product.href}
-                      className="text-sm text-[#9CAABA] transition hover:text-white"
+                      className="text-base text-[#9CAABA] transition hover:text-white"
                     >
                       {product.name}
                     </Link>
@@ -221,7 +221,7 @@ const Footer = () => {
             ================================================= */}
             <div className="lg:col-span-2">
 
-              <h3 className="mb-5 text-[11px] font-semibold uppercase tracking-[0.16em] text-white">
+              <h3 className="mb-5 text-base font-semibold uppercase tracking-[0.16em] text-white">
                 Contact
               </h3>
 
@@ -237,11 +237,11 @@ const Footer = () => {
                   />
 
                   <div>
-                    <p className="mb-1 text-xs font-medium text-[#D4DCE4]">
+                    <p className="mb-1 text-base font-medium text-[#D4DCE4]">
                       Registered Office
                     </p>
 
-                    <p className="text-xs leading-5 text-[#8998A9]">
+                    <p className="text-base leading-5 text-[#8998A9]">
                       110, Satya Bhawan, 36 Community Center,
                       Wazirpur Industrial Area,
                       New Delhi - 110052, India.
@@ -256,11 +256,11 @@ const Footer = () => {
                   <div className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-[#25834B]" />
 
                   <div>
-                    <p className="mb-1 text-xs font-medium text-[#D4DCE4]">
+                    <p className="mb-1 text-base font-medium text-[#D4DCE4]">
                       Manufacturing Unit
                     </p>
 
-                    <p className="text-xs leading-5 text-[#8998A9]">
+                    <p className="text-base leading-5 text-[#8998A9]">
                       Spread across Delhi NCR
                     </p>
                   </div>
@@ -280,14 +280,14 @@ const Footer = () => {
 
                     <a
                       href="tel:+918810422935"
-                      className="block text-xs text-[#9CAABA] transition hover:text-white"
+                      className="block text-base text-[#9CAABA] transition hover:text-white"
                     >
                       +91-8810422935
                     </a>
 
                     <a
                       href="tel:+919810057441"
-                      className="block text-xs text-[#9CAABA] transition hover:text-white"
+                      className="block text-base text-[#9CAABA] transition hover:text-white"
                     >
                       +91-9810057441
                     </a>
@@ -307,7 +307,7 @@ const Footer = () => {
 
                   <a
                     href="mailto:info@polywell.co.in"
-                    className="text-xs text-[#9CAABA] transition hover:text-white"
+                    className="text-base text-[#9CAABA] transition hover:text-white"
                   >
                     info@polywell.co.in
                   </a>
@@ -323,11 +323,11 @@ const Footer = () => {
             ================================================= */}
             <div className="lg:col-span-2">
 
-              <h3 className="mb-5 text-[11px] font-semibold uppercase tracking-[0.16em] text-white">
+              <h3 className="mb-5 text-base font-semibold uppercase tracking-[0.16em] text-white">
                 Trust & Certification
               </h3>
 
-              <p className="text-xs leading-5 text-[#8998A9]">
+              <p className="text-base leading-5 text-[#8998A9]">
                 Recognized for our commitment to customer service,
                 professional business practices and trusted customer
                 relationships.
@@ -364,12 +364,12 @@ const Footer = () => {
 
             <div className="flex flex-col gap-4 text-[11px] text-[#718194] md:flex-row md:items-center md:justify-between">
 
-              <p>
+              <p className="text-sm">
                 © 2026 Sangam Plastic Industries Pvt. Ltd.
                 All rights reserved.
               </p>
 
-              <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
+              <div className="flex flex-wrap text-sm items-center gap-x-4 gap-y-2">
 
                 <Link
                   href="/privacy-policy"
@@ -401,7 +401,7 @@ const Footer = () => {
             </div>
 
             {/* Developer */}
-            <div className="mt-4 text-center text-[10px] text-[#58697C] md:text-right">
+            <div className="mt-4 text-center text-sm text-[#58697C] md:text-right">
               Website Designed By{" "}
               <a
                 

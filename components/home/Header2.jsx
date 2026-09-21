@@ -93,11 +93,11 @@ export default function Header2() {
           {/* ================= RIGHT COLUMN ================= */}
      <div className="hidden lg:block overflow-visible">
             {/* ===== TOP STRIP ===== */}
-            <div className="bg-[#E6F4FF] border-b border-gray-200">
+            <div className="bg-green-800 ">
               <div className="w-full px-4 xl:px-6 flex flex-col xl:flex-row xl:items-center xl:justify-between gap-3 py-2">
                 {/* LEFT CONTENT */}
                 <div className="flex flex-wrap items-center justify-center xl:justify-start gap-3 xl:gap-8 2xl:gap-14 min-w-0">
-                  <span className="text-red-500 font-bold font-serif text-sm lg:text-base xl:text-lg 2xl:text-2xl animate-pulse text-center xl:text-left leading-snug">
+                  <span className="text-white font-bold font-serif text-sm lg:text-base xl:text-lg 2xl:text-2xl animate-pulse text-center xl:text-left leading-snug">
                     India's Only Integrated Waste Management Products
                     Manufacturer
                   </span>
@@ -106,13 +106,13 @@ export default function Header2() {
                     href="https://wa.me/918810422935?text=Hi%20Polywell%2C%20I%20need%20the%20wholesale%20price%20list%20and%20catalog%20for%20your%20dustbins.%20Please%20share%20details."
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 whitespace-nowrap text-[#016630] font-medium"
+                    className="flex items-center gap-2 whitespace-nowrap text-white font-medium"
                   >
                     <span className="capitalize text-sm lg:text-base xl:text-lg animate-pulse">
                       Whatsapp Now
                     </span>
 
-                    <FaWhatsappSquare className="w-5 h-5 xl:w-6 xl:h-6 text-green-600" />
+                    <FaWhatsappSquare className="w-5 h-5 xl:w-6 xl:h-6 text-white" />
                   </Link>
 
                   <button

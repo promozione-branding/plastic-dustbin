@@ -103,7 +103,7 @@ export default function Product() {
         {/* =====================================================
             HEADER
         ===================================================== */}
-        <div className="mb-10 flex flex-col justify-between gap-6 md:mb-14 md:flex-row md:items-end">
+        <div className="mb-5 flex flex-col justify-between gap-6 md:mb-6 md:flex-row md:items-end">
 
           <div className="max-w-2xl">
 
@@ -158,7 +158,7 @@ export default function Product() {
     <Link
       href={product.href}
       key={product.number}
-      className="group relative block h-[330px]"
+      className="group relative block h-[300px]"
     >
 
       {/* =====================================================

@@ -121,9 +121,10 @@ const Whowework = () => {
           <Image
             src="/whowework.webp"
             alt="Plastic Dustbin Supply"
-            width={900}
-            height={900}
-            className="h-auto w-full object-cover"
+            width={100}
+            height={100}
+            unoptimized
+            className="h-full md:h-[500px] w-full object-cover"
             priority
           />
 

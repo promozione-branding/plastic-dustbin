@@ -85,20 +85,21 @@ export default function Category() {
                   {category.number}
                 </span>
 
-                <h3 className=" text-base text-center font-semibold leading-6 text-[#202020]">
+                <h3 className=" text-base md:text-lg text-center font-semibold leading-6 text-[#202020]">
                   {category.title}
                 </h3>
 
               </div>
 
               {/* ================= IMAGE ================= */}
-              <div className="relative mt-auto flex h-[240px] items-end justify-center overflow-hidden bg-[#F6F8F6]">
+              <div className="relative mt-auto flex h-[240px] items-end justify-center overflow-hidden bg-[#e3f4ff]">
 
                 <Image
                   src={category.image}
                   alt={category.title}
                   width={100}
                   height={100}
+                  unoptimized
                   className="
                     h-full
                     w-full
