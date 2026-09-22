@@ -11,8 +11,9 @@ import "swiper/css/effect-fade";
 
 export default function Hero2() {
   const backgroundImages = [
-    "/hero/hos2.jpeg",
-    "/hero/park.jpeg",
+    "/hero/newhos.jpeg",
+    "/hero/park2.jpeg",
+    "/hero/bul.png",
    
   ];
 
@@ -46,11 +47,12 @@ export default function Hero2() {
       </div>
 
       {/* ================= BLACK OVERLAY ================= */}
-      <div className="absolute inset-0 z-[1] bg-black/30" />
+      {/* <div className="absolute inset-0 z-[1] bg-black/30" /> */}
+      {/* <div className="absolute inset-0 z-[1] bg-gradient-to-r from-blue-500/0 via-transparent to-blue/40" /> */}
 
       {/* ================= HERO CONTENT ================= */}
-      <div className="relative z-50 mx-auto flex min-h-[620px] max-w-7xl items-center px-6 py-5 lg:px-8">
-        <div className="grid w-full items-center gap-10 lg:grid-cols-[0.9fr_1.1fr]">
+      <div className="relative z-50 mx-auto flex min-h-[620px] w-full justify-center items-center px-6 py-5 lg:px-20">
+        <div className="grid w-full items-center gap-10 md:grid-cols-2">
 
           {/* ================= LEFT CONTENT ================= */}
           <div className="relative z-10 max-w-xl">
@@ -59,16 +61,16 @@ export default function Hero2() {
             <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/15 px-4 py-2 shadow-sm backdrop-blur-md">
               <span className="h-2 w-2 rounded-full bg-[#63D58C]" />
 
-              <span className="text-sm font-medium text-white">
+              <span className="text-sm font-medium text-[#13513e]">
                 Trusted Plastic Dustbin Manufacturer
               </span>
             </div>
 
             {/* Heading */}
-            <h1 className="text-5xl whitespace-nowrap font-bold leading-[1.08] tracking-tight text-white sm:text-5xl">
+            <h1 className="text-5xl whitespace-nowrap font-bold leading-[1.08] tracking-tight text-[#13513e] sm:text-5xl">
               Smart Waste
             
-              <span className="text-green-600"> Management</span>
+              <span className="text-[#13513e]"> Management</span>
               <br />
               Starts Here.
             </h1>
@@ -76,38 +78,38 @@ export default function Hero2() {
            
              <div className="mt-6 flex flex-wrap gap-x-8 gap-y-3 border-t border-white/25 pt-5">
               <div>
-                <p className="text-xl font-bold text-white">
+                <p className="text-xl font-bold text-[#13513e]">
                   100%
                 </p>
 
-                <p className="mt-1 text-xs text-white">
+                <p className="mt-1 text-xs text-[#13513e]">
                   Quality Focused
                 </p>
               </div>
 
               <div>
-                <p className="text-xl font-bold text-white">
+                <p className="text-xl font-bold text-[#13513e]">
                   Durable
                 </p>
 
-                <p className="mt-1 text-xs text-white">
+                <p className="mt-1 text-xs text-[#13513e]">
                   Built for Daily Use
                 </p>
               </div>
 
               <div>
-                <p className="text-xl font-bold text-white">
+                <p className="text-xl font-bold text-[#13513e]">
                   Bulk
                 </p>
 
-                <p className="mt-1 text-xs text-white">
+                <p className="mt-1 text-xs text-[#13513e]">
                   Manufacturing
                 </p>
               </div>
             </div>
 
              {/* Description */}
-            <p className="mt-6 max-w-lg text-lg text-white">
+            <p className="mt-6 max-w-lg text-lg text-[#13513e]">
               Durable, hygienic and thoughtfully designed plastic dustbins
               manufactured for homes, offices, commercial spaces and
               industrial applications.
@@ -124,7 +126,7 @@ export default function Hero2() {
 
               <Link
                 href="/contact"
-                className="rounded-full border border-white/40 bg-white/10 px-7 py-3.5 text-sm font-semibold text-white backdrop-blur-sm transition hover:border-white hover:bg-white hover:text-[#24382C]"
+                className="rounded-full border border-[#13513e] bg-white/10 px-7 py-3.5 text-sm font-semibold text-[#13513e] backdrop-blur-sm transition hover:border-white hover:bg-white hover:text-[#24382C]"
               >
                 Get a Quote
               </Link>

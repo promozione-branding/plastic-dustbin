@@ -103,7 +103,7 @@ const Certificates = () => {
 
         {/* Certificate Slider */}
         <Swiper
-          modules={[Autoplay, EffectCoverflow]}
+           modules={[Autoplay, EffectCoverflow]}
           effect="coverflow"
           centeredSlides={true}
           loop={true}
@@ -178,11 +178,11 @@ const Certificates = () => {
 
                   {/* Image */}
                   <div className="relative h-[390px] w-full overflow-hidden rounded-xl bg-white sm:h-[420px] md:h-[440px]">
-                    <Image
+                    <img
                       src={cert.src}
                       alt={cert.alt}
                       fill
-                      unoptimized
+                      
                       sizes="(max-width: 640px) 80vw, (max-width: 1024px) 45vw, 30vw"
                       className="
                         object-contain
@@ -197,22 +197,7 @@ const Certificates = () => {
                     <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-black/10 to-transparent" />
                   </div>
 
-                  {/* Bottom Info */}
-                  {/* <div className="flex items-center justify-between px-3 py-3">
-                    <div>
-                      <p className="text-xs font-medium uppercase tracking-[0.2em] text-[#72c99d]">
-                        Certification
-                      </p>
-
-                      <p className="mt-1 text-sm font-semibold text-white">
-                        Quality & Excellence
-                      </p>
-                    </div>
-
-                    <div className="flex h-9 w-9 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white/70 transition-all duration-300 group-hover:border-[#72c99d]/50 group-hover:bg-[#147A4C] group-hover:text-white">
-                      ↗
-                    </div>
-                  </div> */}
+                  
                 </div>
               </div>
             </SwiperSlide>

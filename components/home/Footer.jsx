@@ -126,41 +126,29 @@ const Footer = () => {
               </div>
 
               {/* Social */}
-              {/* <div className="mt-6 flex items-center gap-2">
+              <div className="mt-6 flex items-center gap-2">
+
+               
 
                 <a
-                  href="#"
-                  aria-label="Facebook"
-                  className="flex h-8 w-8 items-center justify-center rounded border border-[#304155] text-[#9CAABA] transition hover:border-[#25834B] hover:text-white"
-                >
-                  <Facebook size={14} />
-                </a>
-
-                <a
-                  href="#"
+                  href="https://www.facebook.com/polywelldustbins"
                   aria-label="Instagram"
                   className="flex h-8 w-8 items-center justify-center rounded border border-[#304155] text-[#9CAABA] transition hover:border-[#25834B] hover:text-white"
                 >
                   <Instagram size={14} />
                 </a>
 
-                <a
-                  href="#"
-                  aria-label="Youtube"
+                 <a
+                  href="https://www.instagram.com/polywelldustbins"
+                  aria-label="Facebook"
                   className="flex h-8 w-8 items-center justify-center rounded border border-[#304155] text-[#9CAABA] transition hover:border-[#25834B] hover:text-white"
                 >
-                  <Youtube size={14} />
+                  <Facebook size={14} />
                 </a>
 
-                <a
-                  href="#"
-                  aria-label="LinkedIn"
-                  className="flex h-8 w-8 items-center justify-center rounded border border-[#304155] text-[#9CAABA] transition hover:border-[#25834B] hover:text-white"
-                >
-                  <Linkedin size={14} />
-                </a>
+                
 
-              </div> */}
+              </div>
             </div>
 
             {/* =================================================
