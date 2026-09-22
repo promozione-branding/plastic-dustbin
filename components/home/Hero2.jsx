@@ -109,7 +109,7 @@ export default function Hero2() {
             </div>
 
              {/* Description */}
-            <p className="mt-6 max-w-lg text-lg text-[#13513e]">
+            <p className="mt-6 max-w-lg text-lg text-black">
               Durable, hygienic and thoughtfully designed plastic dustbins
               manufactured for homes, offices, commercial spaces and
               industrial applications.
