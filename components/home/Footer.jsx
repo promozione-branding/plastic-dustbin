@@ -326,7 +326,7 @@ const Footer = () => {
                 onClick={() => setIsModalOpen(true)}
                 className="mt-5 flex items-center gap-3 text-left"
               >
-                <div className="flex h-20 w-20 items-center justify-center rounded-lg border border-[#304155] bg-[#10263D]">
+                <div className="flex h-20 w-20 items-center justify-center  rounded-lg border border-[#304155] bg-[#10263D]">
                   <img
                     src="https://res.cloudinary.com/dzbkxqqo9/image/upload/v1759726401/trustseal_vltgii.webp"
                     alt="Trust Elite Certificate"
@@ -411,7 +411,7 @@ const Footer = () => {
       ====================================================== */}
       {isModalOpen && (
         <div
-          className="fixed inset-0 z-[999] flex items-center justify-center bg-black/80 px-5"
+          className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/80 px-5"
           onClick={() => setIsModalOpen(false)}
         >
 

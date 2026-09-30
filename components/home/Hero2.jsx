@@ -8,8 +8,12 @@ import { Autoplay, EffectFade } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/effect-fade";
+import { useState } from "react";
+import Enquiry from "@/components/Enquiry";
+
 
 export default function Hero2() {
+  const [isFormOpen ,setIsFormOpen]=useState(false);
   const backgroundImages = [
     "/hero/newhos.jpeg",
     "/hero/park2.jpeg",
@@ -18,6 +22,7 @@ export default function Hero2() {
   ];
 
   return (
+    <>
     <section className="relative mt-20 min-h-[520px] overflow-hidden">
       {/* ================= BACKGROUND SWIPER ================= */}
       <div className="absolute inset-0 z-0">
@@ -124,12 +129,12 @@ export default function Hero2() {
                 Explore Products
               </Link>
 
-              <Link
-                href="/contact"
+              <button
+                onClick={()=>setIsFormOpen(true)}
                 className="rounded-full border border-[#13513e] bg-white/10 px-7 py-3.5 text-sm font-semibold text-[#13513e] backdrop-blur-sm transition hover:border-white hover:bg-white hover:text-[#24382C]"
               >
                 Get a Quote
-              </Link>
+              </button>
             </div>
 
             {/* Features */}
@@ -268,5 +273,10 @@ export default function Hero2() {
         </div>
       </div>
     </section>
+
+   {isFormOpen && (
+             <Enquiry isOpen={isFormOpen} onClose={() => setIsFormOpen(false)} />
+           )}
+    </>
   );
 }
