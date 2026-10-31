@@ -8,6 +8,7 @@ import { categories } from "@/Data";
 import Enquiry from "@/components/Enquiry";
 import TranslateButton from "../GoogleTranslate";
 import { usePathname } from "next/navigation";
+import { handleCallClick, handleWhatsappClick } from "@/lib/track";
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -50,10 +51,9 @@ export default function Navbar() {
 
   return (
     <>
-     <header
-  className={`fixed top-0 left-0 w-full z-[9999] transition-all duration-300 ${
-          scrolled ? "shadow-lg bg-white" : "bg-white"
-        }`}
+      <header
+        className={`fixed top-0 left-0 w-full z-[9999] transition-all duration-300 ${scrolled ? "shadow-lg bg-white" : "bg-white"
+          }`}
       >
         <div className="w-full mx-auto lg:grid lg:grid-cols-[240px_1fr] xl:grid-cols-[260px_1fr] border-b border-gray-300">
           {/* ================= LEFT COLUMN : LOGO ================= */}
@@ -91,7 +91,7 @@ export default function Navbar() {
           </div>
 
           {/* ================= RIGHT COLUMN ================= */}
-     <div className="hidden lg:block overflow-visible">
+          <div className="hidden lg:block overflow-visible">
             {/* ===== TOP STRIP ===== */}
             <div className="bg-[#E6F4FF] border-b border-gray-200">
               <div className="w-full px-4 xl:px-6 flex flex-col xl:flex-row xl:items-center xl:justify-between gap-3 py-2">
@@ -103,6 +103,7 @@ export default function Navbar() {
                   </span>
 
                   <Link
+                    onClick={() => handleWhatsappClick({ source: "Website home page", obj: "N/A" })}
                     href="https://wa.me/918810422935?text=Hi%20Polywell%2C%20I%20need%20the%20wholesale%20price%20list%20and%20catalog%20for%20your%20dustbins.%20Please%20share%20details."
                     target="_blank"
                     rel="noopener noreferrer"
@@ -123,12 +124,12 @@ export default function Navbar() {
                   </button>
                 </div>
 
-               
+
               </div>
             </div>
 
             {/* ===== MAIN NAV ===== */}
-        <nav className="relative bg-white min-h-[68px] flex items-center overflow-visible">
+            <nav className="relative bg-white min-h-[68px] flex items-center overflow-visible">
               <div className="w-full px-4 xl:px-6 flex items-center justify-between gap-4">
                 {/* CENTER MENU */}
                 <ul className="flex items-center gap-4 xl:gap-8 2xl:gap-10 text-base xl:text-lg 2xl:text-xl font-medium text-gray-800 flex-wrap">
@@ -151,8 +152,8 @@ export default function Navbar() {
                       </Link>
 
                       {item.hasCategories && openMenu === "Products" && (
-                 <div
-  className="
+                        <div
+                          className="
     absolute
     left-0
     top-full
@@ -166,7 +167,7 @@ export default function Navbar() {
     shadow-2xl
     z-[99999]
   "
->
+                        >
                           {categories.map((cat) => (
                             <Link
                               key={cat.id}
@@ -189,7 +190,7 @@ export default function Navbar() {
                       Call us on:
                     </span>
 
-                    <a
+                    <a onClick={() => handleCallClick({ source: "Website home page", obj: "N/A" })}
                       href="tel:+918810422935"
                       className="text-lg 2xl:text-xl font-bold"
                     >
@@ -256,9 +257,8 @@ export default function Navbar() {
 
                           <ChevronDown
                             size={18}
-                            className={`transition-transform duration-300 ${
-                              mobileProductsOpen ? "rotate-180" : ""
-                            }`}
+                            className={`transition-transform duration-300 ${mobileProductsOpen ? "rotate-180" : ""
+                              }`}
                           />
                         </button>
 
@@ -284,7 +284,7 @@ export default function Navbar() {
 
               {/* ACTION BUTTONS */}
               <div className="mt-8 pt-6 border-t">
-                <a
+                <a onClick={() => handleCallClick({ source: "Website home page", obj: "N/A" })}
                   href="tel:+918810422935"
                   className="block bg-green-600 text-white text-center py-3 rounded-lg mb-4 font-medium"
                 >

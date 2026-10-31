@@ -4,6 +4,7 @@ import { categories } from "@/Data";
 import Image from "next/image";
 import Head from "next/head";
 import Enquiry from "@/components/Enquiry";
+import { handleCallClick, handleWhatsappClick } from "@/lib/track";
 
 export default function ProductPage({ params }) {
   const { productId } = React.use(params);
@@ -62,11 +63,10 @@ export default function ProductPage({ params }) {
                   <div
                     key={i}
                     onClick={() => setActiveImage(img)}
-                    className={`min-w-[80px] h-20 sm:w-24 sm:h-24 border rounded-xl overflow-hidden cursor-pointer ${
-                      activeImage.src === img.src
-                        ? "border-blue-600"
-                        : "border-gray-300"
-                    }`}
+                    className={`min-w-[80px] h-20 sm:w-24 sm:h-24 border rounded-xl overflow-hidden cursor-pointer ${activeImage.src === img.src
+                      ? "border-blue-600"
+                      : "border-gray-300"
+                      }`}
                   >
                     <Image
                       src={img.src}
@@ -125,14 +125,14 @@ export default function ProductPage({ params }) {
 
               {/* BUTTONS */}
               <div className="grid md:grid-cols-3 grid-cols-2 gap-3 md:gap-4 mt-8">
-                <a
+                <a onClick={() => handleCallClick({ source: "Website product page", obj: product.name })}
                   href="tel:+918810422935"
                   className="text-center px-5 py-3 bg-blue-600 text-white rounded-xl font-semibold hover:bg-blue-700 transition"
                 >
                   Call Now
                 </a>
 
-                <a
+                <a onClick={() => handleWhatsappClick({ source: "Website product page", obj: product.name })}
                   href={`https://wa.me/+918810422935?text=Hello, I am interested in ${encodeURIComponent(
                     product.name,
                   )}`}
@@ -149,16 +149,16 @@ export default function ProductPage({ params }) {
                 >
                   Enquire Now
                 </button>
-                
+
               </div>
               <div className="flex md:hidden justify-center w-full mx-auto items-center">
-                  <button
+                <button
                   onClick={() => setIsFormOpen(true)}
                   className="  text-center px-9 py-3.5 bg-indigo-600 text-white rounded-xl font-semibold hover:bg-indigo-700 transition"
                 >
                   Enquire Now
                 </button>
-                </div>
+              </div>
             </div>
           </div>
         </div>

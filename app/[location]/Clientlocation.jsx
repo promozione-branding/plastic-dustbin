@@ -38,6 +38,7 @@ import {
   BadgeCheck,
   Sparkles,
 } from "lucide-react";
+import { handleCallClick, handleWhatsappClick } from "@/lib/track";
 
 export default function HomePage() {
   const params = useParams();
@@ -376,14 +377,14 @@ export default function HomePage() {
                     />
                   </div>
 
-                  
+
                   <div className="p-4 flex flex-col items-center">
                     <h3 className="text-xl font-semibold text-gray-800 text-center">
                       {item.title}
                     </h3>
 
-                    
-                    <a
+
+                    <a onClick={() => handleWhatsappClick({ source: "Website city page", obj: item.title })}
                       href={`https://wa.me/918810422935?text=I want to enquire about ${encodeURIComponent(item.title)}`}
                       target="_blank"
                       className="mt-3 flex items-center gap-2 bg-[#00c950] text-white px-4 py-2 rounded-full text-lg font-bold"
@@ -546,7 +547,7 @@ export default function HomePage() {
           the perfect solution for you.
         </p>
         <div className="mt-10">
-          <a
+          <a onClick={() => handleCallClick({ source: "Website city page", obj: "N/A" })}
             href="tel:8810422935"
             className=" bg-white text-black px-12 py-4 rounded-2xl font-semibold shadow-xl  transition"
           >
@@ -668,9 +669,8 @@ export default function HomePage() {
                   return (
                     <div
                       key={faq.question}
-                      className={`rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 cursor-pointer overflow-hidden ${
-                        isOpen ? "bg-[#f1ffed]" : "bg-white"
-                      }`}
+                      className={`rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 cursor-pointer overflow-hidden ${isOpen ? "bg-[#f1ffed]" : "bg-white"
+                        }`}
                     >
                       <button
                         className="w-full flex justify-between items-center px-5 py-4 text-left"
@@ -680,15 +680,13 @@ export default function HomePage() {
                           {faq.question}
                         </span>
                         <ChevronDown
-                          className={`w-5 h-5 text-gray-700 transform transition-transform duration-300 ${
-                            isOpen ? "rotate-180 text-[#F7C600]" : ""
-                          }`}
+                          className={`w-5 h-5 text-gray-700 transform transition-transform duration-300 ${isOpen ? "rotate-180 text-[#F7C600]" : ""
+                            }`}
                         />
                       </button>
                       <div
-                        className={`px-5 overflow-hidden transition-all duration-500 ${
-                          isOpen ? "max-h-[500px] pb-4" : "max-h-0"
-                        }`}
+                        className={`px-5 overflow-hidden transition-all duration-500 ${isOpen ? "max-h-[500px] pb-4" : "max-h-0"
+                          }`}
                       >
                         <p className="text-black text-sm whitespace-pre-line leading-relaxed font-serif">
                           {faq.answer}

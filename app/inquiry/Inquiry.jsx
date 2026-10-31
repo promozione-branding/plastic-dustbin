@@ -36,6 +36,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import Link from "next/link";
 import FooterInquiry from "@/components/Landingpage/FooterInquiry";
+import { handleCallClick, handleWhatsappClick } from "@/lib/track";
 
 export default function Inquiry() {
   const [open, setOpen] = useState(false);
@@ -217,7 +218,7 @@ export default function Inquiry() {
           </div>
 
           {/* Phone (Desktop only) */}
-          <a
+          <a onClick={() => handleCallClick({ source: "Website inquiry page", obj: "N/A" })}
             href="tel:+918810422935"
             className="mr-2 hidden lg:flex items-center gap-3 bg-red-600 hover:bg-red-700 text-white px-5 py-2 rounded-full shadow-md hover:shadow-lg transition-all duration-300"
           >
@@ -228,7 +229,7 @@ export default function Inquiry() {
             <span className="font-semibold tracking-wide"> +91-8810422935</span>
           </a>
 
-          <a
+          <a onClick={() => handleWhatsappClick({ source: "Website inquiry page", obj: "N/A" })}
             href="https://wa.link/5alazl"
             className="mr-2 ml-1 items-center gap-3 text-white animate-pulse px-2 py-3 font-bold text-center transition-all duration-300 border rounded-lg bg-green-600 md:hidden text-sm lg:hidden"
           >
@@ -262,7 +263,7 @@ export default function Inquiry() {
               Contact Us
             </a>
 
-            <a
+            <a onClick={() => handleCallClick({ source: "Website inquiry page", obj: "N/A" })}
               href="tel:+918810422935"
               className="flex items-center gap-3 pt-2"
             >
@@ -292,7 +293,7 @@ export default function Inquiry() {
           height="1000"
           alt="phone-banner"
         />
-        <Link
+        <Link onClick={() => handleWhatsappClick({ source: "Website inquiry page", obj: "N/A" })}
           href="https://wa.me/918810422935?text=Hi%20Polywell%2C%20I%20need%20the%20wholesale%20price%20list%20and%20catalog%20for%20your%20dustbins.%20Please%20share%20details."
           className="bg-green-500 bg-gray-50 text-white whitespace-nowrap px-12 py-4 font-semibold rounded-full shadow hover:bg-green-600 hover:text-gray-500 transition hover:border "
         >
@@ -388,7 +389,7 @@ export default function Inquiry() {
           </Swiper>
         </div>
         <div className=" mt-7 flex justify-center items-center">
-          <Link
+          <Link onClick={() => handleWhatsappClick({ source: "Website inquiry page", obj: "N/A" })}
             href="https://wa.link/5alazl"
             className="bg-green-500 py-3 md:py-2 bg-gray-50 text-lg text-white whitespace-nowrap px-12  font-semibold rounded-full shadow hover:bg-green-600  transition hover:border "
           >
@@ -472,7 +473,7 @@ export default function Inquiry() {
               Build a Stronger Supply Chain with Us
             </button>
             <div className=" md:hidden mt-7 flex justify-center items-center">
-              <Link
+              <Link onClick={() => handleWhatsappClick({ source: "Website inquiry page", obj: "N/A" })}
                 href="https://wa.link/5alazl"
                 className="bg-green-500 py-3 text-lg bg-gray-50 text-white whitespace-nowrap px-12  font-semibold rounded-full shadow hover:bg-green-600  transition hover:border "
               >
@@ -487,7 +488,7 @@ export default function Inquiry() {
       <div id="product">
         <Otherpro inquiry={true} setIsOpen={setIsOpen1} />
         <div className=" mb-4 flex justify-center items-center">
-          <Link
+          <Link onClick={() => handleWhatsappClick({ source: "Website inquiry page", obj: "N/A" })}
             href="https://wa.link/5alazl"
             className="bg-green-500 py-3 bg-gray-50 text-white whitespace-nowrap px-12 font-semibold rounded-full shadow hover:bg-green-600  transition hover:border "
           >
@@ -501,7 +502,7 @@ export default function Inquiry() {
       {/* About Us */}
       <section className=" md:hidden bg-[#F5F6F8] pb-2" id="aboutus">
         <div className="  flex justify-center text-center items-center">
-          <Link
+          <Link onClick={() => handleWhatsappClick({ source: "Website inquiry page", obj: "N/A" })}
             href="https://wa.link/5alazl"
             className="bg-green-500 w-[90%]  bg-gray-50 text-white whitespace-nowrap px-12 py-4 font-semibold rounded-full shadow hover:bg-green-600  transition hover:border "
           >
@@ -667,7 +668,7 @@ export default function Inquiry() {
               Let’s Begin a Conversation
             </button>
           </div>
-          <Link
+          <Link onClick={() => handleWhatsappClick({ source: "Website inquiry page", obj: "N/A" })}
             href="https://wa.link/5alazl"
             className="bg-white md:hidden text-[#0A3A49] font-semibold px-8 py-3 rounded-lg shadow-md hover:bg-gray-100 transition"
           >
@@ -815,7 +816,7 @@ export default function Inquiry() {
               {/* ICON + TEXT ROW */}
               <div className="flex sm:flex-row items-center justify-center md:justify-center gap-2 md:gap-4 mt-5">
                 {/* Phone */}
-                <a href="tel:+918810422935">
+                <a onClick={() => handleCallClick({ source: "Website inquiry page", obj: "N/A" })} href="tel:+918810422935">
                   <div className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-green-500 flex items-center justify-center shadow-lg shrink-0">
                     <PhoneCall className="w-6 h-6 md:w-7 md:h-7 text-white" />
                   </div>
@@ -831,7 +832,7 @@ export default function Inquiry() {
                 </span>
 
                 {/* WhatsApp */}
-                <a
+                <a onClick={() => handleWhatsappClick({ source: "Website inquiry page", obj: "N/A" })}
                   href="https://wa.link/5alazl"
                   target="_blank"
                   rel="noopener noreferrer"

@@ -3,6 +3,7 @@ import React, { useState, useRef } from "react";
 import { MapPin, Phone, Mail } from "lucide-react";
 import Link from "next/link";
 import axios from "axios";
+import { handleCallClick } from "@/lib/track";
 
 const Contact = () => {
   const [submitted, setSubmitted] = useState(false);
@@ -237,7 +238,7 @@ Contact: ${phone}`;
                   <h4 className="text-lg font-semibold text-[#0B2545] mb-1">
                     Phone:
                   </h4>
-                  <a href="tel:+919810057441" className="text-lg text-black">
+                  <a onClick={() => handleCallClick({ source: "Website contact page", obj: "N/A" })} href="tel:+919810057441" className="text-lg text-black">
                     +91-9810057441
                   </a>
                 </div>
