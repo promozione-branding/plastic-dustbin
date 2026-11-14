@@ -124,33 +124,66 @@ export default function ProductPage({ params }) {
               </ul>
 
               {/* BUTTONS */}
-              <div className="grid md:grid-cols-3 grid-cols-2 gap-3 md:gap-4 mt-8">
-                <a onClick={() => handleCallClick({ source: "Website product page", obj: product.name })}
-                  href="tel:+918810422935"
-                  className="text-center px-5 py-3 bg-blue-600 text-white rounded-xl font-semibold hover:bg-blue-700 transition"
-                >
-                  Call Now
-                </a>
+         
+<div className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-4 sm:gap-3">
 
-                <a onClick={() => handleWhatsappClick({ source: "Website product page", obj: product.name })}
-                  href={`https://wa.me/+918810422935?text=Hello, I am interested in ${encodeURIComponent(
-                    product.name,
-                  )}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-center px-5 py-3 bg-green-600 text-white rounded-xl font-semibold hover:bg-green-700 transition"
-                >
-                  WhatsApp Us
-                </a>
+  {/* Price Card */}
+  {product.price && (
+    <div className="col-span-2 flex items-center justify-between rounded-2xl border border-gray-200 bg-gray-50 px-5 py-3.5 sm:col-span-1 sm:flex-col sm:items-start sm:justify-center sm:gap-1">
+      <span className="text-[11px] font-semibold uppercase tracking-[1.5px] text-gray-500">
+        Price
+      </span>
+      <span className="text-xl font-bold tracking-tight text-gray-900">
+        ₹ {product.price}/-
+      </span>
+    </div>
+  )}
 
-                <button
-                  onClick={() => setIsFormOpen(true)}
-                  className="hidden md:block text-center px-5 py-3 bg-indigo-600 text-white rounded-xl font-semibold hover:bg-indigo-700 transition"
-                >
-                  Enquire Now
-                </button>
+  {/* Call Now */}
+  <a
+    onClick={() => handleCallClick({
+      source: "Website product page",
+      obj: product.name
+    })}
+    href="tel:+918810422935"
+    className="flex  items-center justify-center gap-2 rounded-2xl bg-blue-600 px-4 text-sm font-semibold text-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:bg-blue-700 hover:shadow-lg"
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.84.58 2.8.7a2 2 0 0 1 1.73 2.03z"/>
+    </svg>
+    Call Now
+  </a>
 
-              </div>
+  {/* WhatsApp */}
+  <a
+    onClick={() => handleWhatsappClick({
+      source: "Website product page",
+      obj: product.name
+    })}
+    href={`https://wa.me/918810422935?text=${encodeURIComponent(`Hello, I am interested in ${product.name}`)}`}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex min-h-[62px] items-center justify-center gap-2 rounded-2xl bg-[#16A34A] px-4 text-sm font-semibold text-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:bg-[#15803D] hover:shadow-lg"
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8z"/>
+    </svg>
+    WhatsApp
+  </a>
+
+  {/* Enquiry */}
+  <button
+    onClick={() => setIsFormOpen(true)}
+    className="col-span-2 hidden min-h-[62px] items-center justify-center gap-2 rounded-2xl bg-[#172B55] px-4 text-sm font-semibold text-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:bg-[#0D1E40] hover:shadow-lg sm:col-span-1 sm:flex"
+  >
+    Enquire Now
+    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M5 12h14M12 5l7 7-7 7"/>
+    </svg>
+  </button>
+
+</div>
+
               <div className="flex md:hidden justify-center w-full mx-auto items-center">
                 <button
                   onClick={() => setIsFormOpen(true)}

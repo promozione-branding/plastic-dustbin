@@ -21,11 +21,12 @@ const Contact = () => {
     const email = form.email.value;
     const product = form.products.value;
     const message = form.message.value;
+    const webisteUrl = window.location.hostname + window.location.pathname;
 
     try {
       const payload = {
         supplierToken: "6a2faa24c9554d0a6b20f87e",
-        platform: "Sangam Plastic Industries Contact Form",
+        platform: webisteUrl ||"Sangam Plastic Industries Contact Form",
         platformEmail: "shaanpolywell@gmail.com",
         name,
         phone,

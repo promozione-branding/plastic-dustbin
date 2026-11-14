@@ -20,6 +20,7 @@ export const categories = [
         metaDescription:
           "Sangam Plastic Industries Pvt. Ltd. is a trusted Plastic Dustbin Manufacturer offering durable 10L Plastic Pedal Dustbins for hospitals, clinics, laboratories, offices, and commercial waste management applications across India.",
         model: "pw10p",
+        price:500,
 
         color: ["red  ", "yellow  ", "blue  ", "green  ", "black  "],
         excerpt:
@@ -146,6 +147,7 @@ export const categories = [
         metaDescription:
           "Buy durable 15L Pedal Dustbin Model PW15P from Sangam Plastic Industries Pvt. Ltd., a trusted Plastic Dustbin Manufacturer in India offering hygienic and chemical-resistant waste management solutions for offices, hospitals, and commercial spaces.",
         model: "pw15p",
+        price:625,
 
         color: ["red  ", "yellow  ", "black  "],
         excerpt:
@@ -616,6 +618,7 @@ export const categories = [
         metaDescription:
           "Buy durable 50L Pedal Dustbin Model PW50P from Sangam Plastic Industries Pvt. Ltd., a trusted Plastic Dustbin Manufacturer in India offering hygienic and chemical-resistant waste management solutions for hospitals, offices, and commercial spaces.",
         model: "PW50P ",
+        price:1700,
         color: [
           "red  ",
           "yellow  ",
@@ -852,6 +855,7 @@ export const categories = [
         metaDescription:
           "Buy durable 60L Foot Operated Dustbin Model PW60P from Sangam Plastic Industries Pvt. Ltd., a trusted Plastic Dustbin Manufacturer in India offering hygienic and chemical-resistant waste management solutions for homes, offices, and commercial spaces.",
         model: "pw60p",
+        price:2400,
         color: ["red", "yellow", "blue", "green", "black", "white"],
         excerpt:
           "The 60L Foot Operated Dustbin is a medium-capacity, hands-free waste disposal solution designed for homes, offices, and small commercial spaces.",
@@ -1096,6 +1100,7 @@ export const categories = [
           "Buy durable 90L Plastic Pedal Dustbin Model PW90P from Sangam Plastic Industries Pvt. Ltd., a trusted Plastic Dustbin Manufacturer in India offering hygienic and chemical-resistant waste management solutions for hospitals, offices, and commercial spaces.",
 
         model: "pw90p",
+        price:2500,
         color: ["red  ", "yellow  ", "blue  ", "green  ", "black  "],
 
         excerpt:
@@ -1229,6 +1234,7 @@ export const categories = [
           "Buy durable 80L Wheeled Central Pedal Bio Bin Model PW80CP from Sangam Plastic Industries Pvt. Ltd., a trusted Plastic Dustbin Manufacturer offering hygienic and chemical-resistant waste management solutions for healthcare, institutional, and commercial spaces.",
 
         model: "pw80cp",
+        price:3250,
         color: ["  red  ", "yellow  ", "blue  ", "green  ", "black"],
         excerpt:
           "The 80L Wheeled Central Pedal Bio Bin is designed for hygienic and efficient waste management in healthcare, institutional, and commercial environments.",
@@ -1348,6 +1354,7 @@ export const categories = [
         model: "pw120r",
 
         color: ["  red  ", "yellow  ", "blue  ", "black"],
+        price:3600,
 
         excerpt:
           "The 120L PP Central Wheeled Bio Bin is designed for hygienic and efficient waste management in hospitals, laboratories, and commercial establishments with durable PP construction.",
@@ -1913,6 +1920,7 @@ export const categories = [
           "Buy durable 240L Hospitals Wheeled Bins from Sangam Plastic Industries Pvt. Ltd., a trusted Plastic Dustbin Manufacturer offering hygienic and chemical-resistant waste management solutions for hospitals and healthcare environments.",
 
         model: "generic",
+        price:4500,
         color: ["  red", "  black", "  blue", "  yellow"],
 
         excerpt:
@@ -2042,6 +2050,7 @@ export const categories = [
 
         model: "pw660",
         color: ["  red  ", "yellow  ", "blue  ", "black  ", "green"],
+        price:24000,
 
         excerpt:
           "The 660L Four Wheel Plastic Dustbin is designed for large-scale waste collection in hospitals, industrial units, housing societies, and public spaces with durable plastic construction.",
@@ -2164,6 +2173,7 @@ export const categories = [
           "Buy durable 1100L PP Wheeled Bio Bin Model PW1100 from Sangam Plastic Industries Pvt. Ltd., a trusted Plastic Dustbin Manufacturer offering hygienic and heavy-duty waste management solutions for hospitals, industries, and municipal environments.",
 
         model: "pw1100",
+        price:30000,
         color: ["  red", "  yellow", "  blue", "  black", "  green"],
 
         excerpt:
@@ -3729,6 +3739,7 @@ export const categories = [
           "Buy 25 L Swing Lid Round Dustbin made from durable Polypropylene Copolymer for hygienic and spacious waste disposal in homes, offices, kitchens, and commercial spaces.",
 
         model: "pwe25(slro)",
+        price:280,
         color: ["  blue ", "  green ", "  yellow ", "  black ", "  red "],
 
         excerpt:
@@ -3812,6 +3823,7 @@ export const categories = [
           "Buy 40 L Swing Lid Round Dustbin designed for hygienic and large-capacity waste disposal in homes, offices, commercial spaces, and industrial environments.",
 
         model: "pwe40(slro)",
+        price:425,
         color: ["  blue ", "  green ", "  yellow ", "  black ", "  red "],
 
         excerpt:
@@ -3893,6 +3905,7 @@ export const categories = [
         excerpt:
           "The 10L Blue Plastic Garbage Bin is a compact waste management solution designed for daily disposal in hospitals, public hygiene programs, and institutional spaces.",
 
+          price:180,
         description: [
           {
             type: "h2",
@@ -3971,6 +3984,7 @@ export const categories = [
           "Buy Bins On Stands (Roto) for safe biomedical waste collection. Durable yellow plastic bin for hygienic and organized waste disposal.",
 
         model: "generic",
+        price:3500,
         size: ["  size available  ", "  60 ltr", "  100 ltr", "  150 ltr"],
         color: ["  blue", "  green"],
         excerpt:
@@ -4825,6 +4839,7 @@ export const categories = [
         metaDescription:
           "Buy 15L Plastic Pedal Dustbin in Yellow. Durable, hygienic, and hands-free waste disposal solution for offices, hospitals, and commercial spaces. Bulk orders available.",
         model: "pw15p",
+        price:625,
         color: ["  red", "  yellow", "  black"],
         excerpt:
           "The 15L Plastic Pedal Dustbin is designed for hygienic, hands-free waste disposal in offices, hospitals, clinics, and commercial spaces with durable premium plastic construction.",
@@ -5033,6 +5048,7 @@ export const categories = [
           "Buy 50L Bio Bin with lid for hygienic biomedical waste disposal in hospitals and healthcare facilities. Durable plastic construction. Bulk orders available.",
 
         model: "generic",
+        price:1700,
         color: ["  white"],
         excerpt:
           "The 50L Bio Bin is designed for safe and hygienic biomedical waste disposal in hospitals and healthcare facilities with durable plastic construction.",
