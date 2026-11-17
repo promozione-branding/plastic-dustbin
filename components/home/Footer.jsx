@@ -365,18 +365,29 @@ const Footer = () => {
                 >
                   Privacy Policy
                 </Link>
-
-                <span className="text-[#3A4A5D]">•</span>
-
                 <Link
-                  href="/terms"
+                  href="/shipping-policy"
                   className="transition hover:text-white"
                 >
-                  Terms of Supply
+                  Shipping Policy
+                </Link>
+                <Link
+                  href="/return-refund"
+                  className="transition hover:text-white"
+                >
+                  Return Refund
                 </Link>
 
-                <span className="text-[#3A4A5D]">•</span>
+               
 
+                <Link
+                  href="/terms-conditions"
+                  className="transition hover:text-white"
+                >
+                  Terms Conditions
+                </Link>
+
+                
                 <Link
                   href="/contact-us"
                   className="text-[#25834B] transition hover:text-[#36A968]"
