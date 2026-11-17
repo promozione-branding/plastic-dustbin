@@ -23,6 +23,13 @@ const products = [
   { name: "Garbage Dustbins", href: "/categories/garbage-dustbin" },
 ];
 
+const policyLinks = [
+  { name: "Terms & Conditions", href: "/terms-conditions" },
+  { name: "Privacy Policy", href: "/privacy-policy" },
+  { name: "Shipping Policy", href: "/shipping-policy" },
+  { name: "Return & Refund", href: "/return-refund" },
+];
+
 const Footer = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -71,6 +78,10 @@ const Footer = () => {
                 { name: "Our Products", href: "/products" },
                 { name: "Our Blog", href: "/blogs" },
                 { name: "Contact Us", href: "/contact-us" },
+                { name: "Terms & Conditions", href: "/terms-conditions" },
+                { name: "Privacy Policy", href: "/privacy-policy" },
+                { name: "Shipping Policy", href: "/shipping-policy" },
+                { name: "Return & Refund", href: "/return-refund" },
               ].map((link, i) => (
                 <li key={i}>
                   <Link
@@ -185,6 +196,20 @@ const Footer = () => {
         <p>
           Copyright © 2026 Sangam Plastic Industries Pvt. Ltd. All Rights Reserved.
         </p>
+        <nav
+          aria-label="Policies"
+          className="my-3 flex flex-wrap justify-center gap-x-4 gap-y-2 md:my-0"
+        >
+          {policyLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className="hover:text-yellow-500 transition-colors duration-300"
+            >
+              {link.name}
+            </Link>
+          ))}
+        </nav>
         <p className="mt-1">
           Website Designed By Promozione Branding Pvt. Ltd.{" "}
           <a

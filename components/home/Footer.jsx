@@ -66,6 +66,22 @@ const exploreLinks = [
     name: "Contact Us",
     href: "/contact-us",
   },
+  {
+    name: "Terms & Conditions",
+    href: "/terms-conditions",
+  },
+  {
+    name: "Privacy Policy",
+    href: "/privacy-policy",
+  },
+  {
+    name: "Shipping Policy",
+    href: "/shipping-policy",
+  },
+  {
+    name: "Return & Refund",
+    href: "/return-refund",
+  },
 ];
 
 const Footer = () => {
@@ -357,45 +373,7 @@ const Footer = () => {
                 All rights reserved.
               </p>
 
-              <div className="flex flex-wrap text-sm items-center gap-x-4 gap-y-2">
-
-                <Link
-                  href="/privacy-policy"
-                  className="transition hover:text-white"
-                >
-                  Privacy Policy
-                </Link>
-                <Link
-                  href="/shipping-policy"
-                  className="transition hover:text-white"
-                >
-                  Shipping Policy
-                </Link>
-                <Link
-                  href="/return-refund"
-                  className="transition hover:text-white"
-                >
-                  Return Refund
-                </Link>
-
-               
-
-                <Link
-                  href="/terms-conditions"
-                  className="transition hover:text-white"
-                >
-                  Terms Conditions
-                </Link>
-
-                
-                <Link
-                  href="/contact-us"
-                  className="text-[#25834B] transition hover:text-[#36A968]"
-                >
-                  GeM / Bulk Inquiry
-                </Link>
-
-              </div>
+         
 
             </div>
 
