@@ -65,6 +65,8 @@ export default function RootLayout({ children }) {
           `}
         </Script>
 
+        <meta name="google-site-verification" content="5MKK21WmzBnJnwwDVl_GrvppgwGn_M6YUcbNzi3kptQ" />
+
         <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 
         <link
