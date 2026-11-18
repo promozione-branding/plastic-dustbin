@@ -130,9 +130,11 @@ export default function ContactForm() {
     try {
       setLoading(true);
 
+      const webisteUrl = window.location.hostname + window.location.pathname;
+
       const formData = {
         supplierToken: "6a2faa24c9554d0a6b20f87e",
-        platform: "plastic dustbin Popup Form",
+        platform: webisteUrl || "plastic dustbin Popup Form",
         platformEmail: "info@polywell.co.in",
         name,
         phone,

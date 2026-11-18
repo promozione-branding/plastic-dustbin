@@ -146,10 +146,11 @@ export default function ContactForm() {
   const submitForm = async () => {
     try {
       setLoading(true);
+      const webisteUrl = window.location.hostname + window.location.pathname;
 
       const formData = {
         supplierToken: "6a2faa24c9554d0a6b20f87e",
-        platform: "Plastic Dustbin Popup Form",
+        platform: webisteUrl || "Plastic Dustbin Popup Form",
         platformEmail: "shaanpolywell@gmail.com",
         name,
         phone,
