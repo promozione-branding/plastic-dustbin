@@ -273,7 +273,7 @@ export const categories = [
         color: ["red  ", "yellow  ", "blue  ", "black  "],
         excerpt:
           "The 20L  Pedal Dustbin is a compact, hygienic waste management solution designed for homes, offices, and small commercial spaces.",
-
+        price:"700",
         description: [
           
           {
@@ -515,7 +515,7 @@ export const categories = [
         color: ["red  ", "yellow  ", "blue  ", "black  "],
         excerpt:
           "The 40L Plastic Pedal  Dustbin is designed for safe, hygienic, and compliant disposal of biomedical and hazardous waste in hospitals, clinics, and laboratories.",
-
+          price:1400,
         description: [
          
           {
@@ -980,7 +980,7 @@ export const categories = [
         color: ["red  ", "yellow  ", "blue  ", "green  ", "black  ", "white  "],
         excerpt:
           "The 65L Pedal Bin is a high-capacity, hands-free waste management solution designed for hospitals, clinics, and large healthcare facilities.",
-
+        price:2000,
         description: [
           
           {
@@ -1476,7 +1476,7 @@ export const categories = [
         color: ["  red  ", "yellow  ", "blue  ", "green  ", "black"],
         excerpt:
           "The 120L PP Central Pedal Wheeled Bio Bin is designed for practical and hygienic waste management in hospitals, commercial buildings, and institutional environments.",
-
+        price:3600,
         description: [
           {
             type: "h2",
@@ -1566,7 +1566,7 @@ export const categories = [
           "Buy a durable 120L Large Foot Operated Wheeled Dustbin from Sangam Plastic Industries Pvt. Ltd., a trusted Plastic Dustbin Manufacturer offering hygienic and chemical-resistant waste management solutions for offices, commercial buildings, and institutional environments.",
         metaDescription:
           "",
-
+        price:2500,
         model: "pw120fp",
         color: ["  blue", "  green"],
 
@@ -1682,7 +1682,7 @@ export const categories = [
         color: ["  red", "  yellow", "  blue", "  black"],
         excerpt:
           "240L Plastic Wheeled Dustbins are designed for efficient and organized waste collection in industrial, commercial, and institutional environments.",
-
+        price:4500,
         description: [
         
           {
@@ -1800,6 +1800,7 @@ export const categories = [
 
         model: "pw240fp",
         color: ["  yellow  ", "blue"],
+        price:4500,
 
         excerpt:
           "The 240L PP Foot Operated Wheeled Bin is a large-capacity, hands-free waste management solution designed for hospitals, healthcare facilities, and commercial spaces.",
@@ -3274,6 +3275,8 @@ export const categories = [
         model: "pw60lb",
         color: ["  blue", "  green"],
 
+        price:2500,
+
         excerpt:
           "The 60L Litter Bin is a durable and hygienic waste disposal solution designed for hospitals, clinics, gardens, malls, and parking areas.",
 
@@ -3372,6 +3375,7 @@ export const categories = [
           "  100 ltr",
           "  150 ltr",
         ],
+        price:2500,
 
         excerpt:
           "The 110L Litter Bin (Roto) is a versatile high-capacity waste disposal solution designed for offices, hospitals, hotels, malls, and public spaces.",
@@ -3469,7 +3473,7 @@ export const categories = [
 
         model: "pw110lb",
         color: ["  blue", "  green"],
-
+        price:4000,
         excerpt:
           "The 110L Plastic Litter Bin is a high-capacity outdoor waste management solution designed for parks, streets, public spaces, and commercial areas.",
 
@@ -4167,7 +4171,7 @@ export const categories = [
 
         excerpt:
           "The 1100L Pedal Garbage Bin is designed for high-capacity waste management in hospitals and large institutional environments with durable plastic construction.",
-
+        price:30000,
         description: [
           {
             type: "h2",
@@ -5453,7 +5457,7 @@ export const categories = [
           "110L Outdoor Plastic Dustbin Manufacturer | Wall Mounted Waste Bin",
         metaDescription:
           "Buy 110L Outdoor Plastic Dustbin with wall-mounted structure for efficient outdoor waste collection. Durable, weather-resistant plastic waste bin.",
-
+        price:3600,
         excerpt:
           "The 110L Outdoor Plastic Dustbin is designed for efficient waste collection in outdoor and semi-public environments where durability and hygiene are essential.",
 
@@ -5651,7 +5655,7 @@ export const categories = [
           "110L Plastic Swing Dustbin Manufacturer | Outdoor Square Waste Bin",
         metaDescription:
           "Buy 110L Plastic Swing Dustbin for outdoor and public waste disposal. Durable square plastic bin with swing lid for hygienic waste management.",
-
+        price:2500,
         excerpt:
           "The 110L Plastic Swing Dustbin is designed for convenient and hygienic waste disposal in outdoor and public spaces.",
 
