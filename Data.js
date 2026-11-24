@@ -3539,13 +3539,14 @@ export const categories = [
 
         image: [
           {
-            src: "/product/new plastic dustbin products/100L Public Litter Bins/1.webp",
-            alt: "100L Public Litter Bin Front View",
-          },
-          {
             src: "/product/new plastic dustbin products/100L Public Litter Bins/2.webp",
             alt: "100L Public Litter Bin Outdoor Use",
           },
+          {
+            src: "/product/new plastic dustbin products/100L Public Litter Bins/1.webp",
+            alt: "100L Public Litter Bin Front View",
+          },
+          
         ],
       },
     ],
