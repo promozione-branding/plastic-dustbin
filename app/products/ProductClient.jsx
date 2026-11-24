@@ -78,6 +78,11 @@ const Page = () => {
 
                 
                 <h2 className="md:text-lg font-semibold">{product.name}</h2>
+                {product.price != null && product.price !== "" && (
+                  <p className="mt-1 font-semibold text-[#00537B]">
+                    ₹ {product.price}/-
+                  </p>
+                )}
                
               </div>
 

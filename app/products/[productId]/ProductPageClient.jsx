@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { categories } from "@/Data";
 import Image from "next/image";
 import Head from "next/head";
@@ -12,6 +12,11 @@ export default function ProductPage({ params }) {
   const product = allProducts.find((p) => p.id === productId);
   const [activeImage, setActiveImage] = useState(product?.image[0]);
   const [isFormOpen, setIsFormOpen] = useState(false);
+
+  useEffect(() => {
+    const timer = window.setTimeout(() => setIsFormOpen(true), 1500);
+    return () => window.clearTimeout(timer);
+  }, [productId]);
 
   if (!product) {
     return (
