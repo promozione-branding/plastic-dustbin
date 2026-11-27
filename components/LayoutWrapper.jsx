@@ -15,12 +15,13 @@ export default function LayoutWrapper({ children }) {
     pathname.startsWith("/inquiry") ||
     pathname.startsWith("/home2") ||
     pathname.startsWith("/bulk-inquiry");
+  const isHomePage = pathname === "/";
 
   return (
-    <>
+    <div className={isHomePage ? "w-screen max-w-none overflow-x-clip" : undefined}>
       {!hideLayout && <Header2 />}
       {children}
       {!hideLayout && <Footer />}
-    </>
+    </div>
   );
 }

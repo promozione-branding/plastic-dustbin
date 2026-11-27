@@ -324,7 +324,7 @@ export default function ProductPage({ params }) {
                   key={relatedProduct.id}
                   className="bg-green-50 rounded-xl shadow-md p-4 text-center"
                 >
-                  <div className="w-full h-40 sm:h-52 relative overflow-hidden rounded-lg">
+                  <div className="w-full h-70 sm:h-52 relative overflow-hidden rounded-lg">
                     <Image
                       src={relatedProduct.image[0]?.src}
                       alt={relatedProduct.name}
