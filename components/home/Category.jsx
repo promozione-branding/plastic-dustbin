@@ -250,7 +250,7 @@ export default function Category() {
                   className="
                     relative
                     mt-1
-                    h-[235px]
+                    h-[275px]
                     overflow-hidden
                     bg-gradient-to-b
                     from-[#F1F8F3]
